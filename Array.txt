@@ -1,8 +1,0 @@
-1. Number of unique occurance(LeetCode)
-2. Find all duplicate in array (LeetCode)
-3. Find Unique(codeStudio)
-4. Duplicate in array(code studio)
-5. Intersaction of two sorted arrays(codeStudio)
-6. Pair Sum(codeStudio)
-7. Swap alternatives(codeStudio)
-8. 3 Sum (codeStudio)
