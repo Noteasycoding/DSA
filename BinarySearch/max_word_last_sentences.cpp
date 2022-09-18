@@ -14,26 +14,26 @@ using namespace std;
             else start++;
         }
         return count;
-    }
+}
 
-    int mostWordsFound(vector<string>& sentences) {
-        int size = sentences.size() -1;
-        int maxi = INT_MIN;
+int mostWordsFound(vector<string>& sentences) {
+    int size = sentences.size() -1;
+    int maxi = INT_MIN;
         
-        int i = 0;
-        while(i <= size){
-            int count = wordCount(sentences[i]);
-            if(count > maxi){
-                maxi = count;
-                i++;
-            }
-            else{
-                i++;
-            }
+    int i = 0;
+    while(i <= size){
+         int count = wordCount(sentences[i]);
+        if(count > maxi){
+            maxi = count;
+            i++;
+        }
+        else{
+            i++;
+        }
             
-        }        
-        return maxi;
-    }
+    }        
+    return maxi;
+}
  
 int main(){
  
