@@ -21,10 +21,10 @@ using namespace std;
         while (col <= n)
         {
             cout<<"*"<<" ";
-            col = col + 1;
+            col += 1;
         }
         cout<<endl;        
-        row = row + 1;
+        row += 1;
     }
     
  }
