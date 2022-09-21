@@ -44,6 +44,19 @@ int main(){
     cout<< *p << " - " << *q <<endl;
 
 
+    int number = 5;
+    int* ptr = &number;
+    cout<<"the address of int number :"<<ptr<<endl;
+    (ptr)++;
+    cout<<"the address of int number :"<<ptr<<endl;
+
+    float number2 = 5;
+    float* ptr2 = &number2;
+
+    cout<<"the address of float number2 :"<<ptr2<<endl;
+    (ptr2)++;
+   
+
 
     return 0;
 }
