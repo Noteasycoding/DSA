@@ -1,21 +1,27 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
- vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
-        vector<int> smaller;
-        for(int i = 0; i < nums.size(); i++){
-            int count = 0;
-            
-            for(int j = 0; j < nums.size(); j++){
-                if(nums[i] > nums[j]) count++;
-            }
-            smaller.push_back(count);
-        }       
-        return smaller;
+vector<int> smallerNumbersThanCurrent(vector<int> &nums)
+{
+    vector<int> smaller;
+    for (int i = 0; i < nums.size(); i++)
+    {
+        int count = 0;
+
+        for (int j = 0; j < nums.size(); j++)
+        {
+            if (nums[i] > nums[j])
+                count++;
+        }
+
+        smaller.push_back(count);
     }
- 
-int main(){
- 
+    return smaller;
+}
+
+int main()
+{
+
     vector<int> nums;
     vector<int> ans;
 
@@ -26,10 +32,11 @@ int main(){
     nums.push_back(3);
 
     ans = smallerNumbersThanCurrent(nums);
-    
-    for(int i : ans){
-        cout<< i << " ";
+
+    for (int i : ans)
+    {
+        cout << i << " ";
     }
- 
+
     return 0;
 }

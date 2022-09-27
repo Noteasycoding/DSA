@@ -1,9 +1,10 @@
-#include<iostream>
-#include<stack>
+#include <iostream>
+#include <stack>
 using namespace std;
- 
-int main(){
- 
+
+int main()
+{
+
     stack<string> s;
 
     s.push("My");
@@ -11,16 +12,15 @@ int main(){
     s.push("is");
     s.push("Zaheer");
 
-    cout<<"Top Element->"<<s.top()<<endl;
+    cout << "Top Element->" << s.top() << endl;
 
     s.pop();
-    cout<<"Top Element->"<<s.top()<<endl;
-    cout<<"size of stack->"<<s.size()<<endl;
+    cout << "Top Element->" << s.top() << endl;
+    cout << "size of stack->" << s.size() << endl;
 
-    cout<<"Empty or not->"<<s.empty()<<endl;
+    cout << "Empty or not->" << s.empty() << endl;
 
     // for(int i: s){
     //     cout<<i;
     // }
- 
 }
