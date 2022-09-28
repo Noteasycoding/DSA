@@ -1,1 +1,1 @@
-myvector.insert(it + 2, anothervector.begin(), anothervector.end())
+nums[i - duplicate_int] = nums[i];
