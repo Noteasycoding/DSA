@@ -1,1 +1,1 @@
-nums[i - duplicate_int] = nums[i];
+shuffle(nums, 3)

@@ -1,13 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
 
-        1 
-      1 2 1 
-    1 2 3 2 1 
-  1 2 3 4 3 2 1 
-1 2 3 4 5 4 3 2 1 
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
 
 */
 /*
@@ -34,7 +34,7 @@ int main(){
             cout<<col<<" ";
             col = col + 1;
         }
-        
+
 
         // Second triangle*****
         int start = 1;
@@ -44,23 +44,23 @@ int main(){
             start = start + 1;
         }
 
-        
-        
+
+
 
         cout<<endl;
         row = row + 1;
     }
-    
+
 }
 
 */
 
-
-int main(){
+int main()
+{
 
     int n;
-    cout<<"Enter the number:";
-    cin>>n;
+    cout << "Enter the number:";
+    cin >> n;
 
     int row = 1;
     while (row <= n)
@@ -68,27 +68,25 @@ int main(){
         int space = 1;
         while (space <= n - row)
         {
-            cout<<" "<<" ";
+            cout << " "
+                 << " ";
             space = space + 1;
-
         }
         int col = 1;
         while (col <= row)
         {
-            cout<<col <<" ";
+            cout << col << " ";
             col = col + 1;
         }
-        
+
         int col2 = 1;
         while (col2 <= row - 1)
         {
-            cout<<row - col2<<" ";
+            cout << row - col2 << " ";
             col2 = col2 + 1;
         }
-        
-        cout<<endl;
-        row = row + 1;
 
+        cout << endl;
+        row = row + 1;
     }
-    
 }
