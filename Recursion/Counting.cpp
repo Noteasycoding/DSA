@@ -18,7 +18,7 @@ int main()
 {
 
     int num;
-    cout << "Enter Num";
+    cout << "Enter Num:";
     cin >> num;
 
     printCounting(num);
