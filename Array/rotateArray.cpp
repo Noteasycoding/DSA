@@ -1,27 +1,32 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-void rotateArray(vector<int>& nums, int k){
+void rotateArray(vector<int> &nums, int k)
+{
     int n = nums.size();
     vector<int> temp(n);
     int i = 0;
 
-    while(i < n){
-        temp[(i+k)%n] = nums[i];
+    while (i < n)
+    {
+        temp[(i + k) % n] = nums[i];
         i++;
     }
     nums = temp;
 }
 
-void printArray(vector<int> nums){
-    for(int i : nums){
-        cout<<i<<" ";
+void printArray(vector<int> nums)
+{
+    for (int i : nums)
+    {
+        cout << i << " ";
     }
 }
- 
-int main(){
- 
+
+int main()
+{
+
     vector<int> nums;
 
     nums.push_back(6);
@@ -34,5 +39,4 @@ int main(){
 
     rotateArray(nums, 5);
     printArray(nums);
- 
 }

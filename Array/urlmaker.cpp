@@ -18,7 +18,7 @@ string addhyphon(string url)
     {
         if (url[i] == 32)
         {
-            url[i] = '-';
+            url[i] = '2';
         }
     }
     return url;

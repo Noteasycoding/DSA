@@ -43,6 +43,7 @@ int main()
 {
     string str;
     cout << "Enter Password:";
+
     getline(cin, str);
 
     if (validator(str))
