@@ -1,18 +1,21 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-void reverseString(char str[], int n){
+void reverseString(string str, int n)
+{
     int start = 0;
     int end = n - 1;
 
-    while(start <= end){
+    while (start <= end)
+    {
         swap(str[start], str[end]);
         start++;
         end--;
     }
 }
- 
-int getLength(char str[]){
+
+int getLength(char str[])
+{
 
     int count = 0;
     for (int i = 0; str[i] != '\0'; i++)
@@ -20,15 +23,14 @@ int getLength(char str[]){
         count++;
     }
     return count;
-    
- }
-int main(){
- 
-    char str[] = "name";
-    int n = getLength(str);
+}
+int main()
+{
+
+    string str = "name";
+    int n = str.length();
 
     reverseString(str, n);
 
-    cout<<str;
- 
+    cout << str;
 }

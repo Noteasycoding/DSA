@@ -1,0 +1,4 @@
+ LinkedList()
+    {
+        head = NULL;
+    }

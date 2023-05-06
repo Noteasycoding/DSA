@@ -4,7 +4,7 @@ using namespace std;
 int factorial(int n)
 {
     // if we do not write base it will accur segmantation fault because of stack overflow
-    if (n == 0)   // Base Case
+    if (n == 1)   // Base Case
         return 1; // return mandatory
 
     return n * factorial(n - 1); // Recursive Relation
