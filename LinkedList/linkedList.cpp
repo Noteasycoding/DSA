@@ -69,6 +69,7 @@ public:
     // Delete the node from Beginnig
     void DeleteBegin()
     {
+
         Node *temp = head;
         head = head->next;
         free(temp);
@@ -83,6 +84,7 @@ public:
             curr = curr->next;
         }
         delete curr->next;
+
         curr->next = nullptr;
     }
 
