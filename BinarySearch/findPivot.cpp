@@ -1,11 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int getPivot(int arr[], int size){
+int getPivot(int arr[], int size)
+{
 
     int start = 0;
     int end = size - 1;
-    int mid = start + (end - start)/2;
+    int mid = start + (end - start) / 2;
 
     while (start < end)
     {
@@ -13,20 +14,19 @@ int getPivot(int arr[], int size){
         {
             start = mid + 1;
         }
-        else{
+        else
+        {
             end = mid;
         }
-        mid = start + (end - start)/2;
-        
+        mid = start + (end - start) / 2;
     }
     return start;
-    
 }
- 
-int main(){
- 
-    int arr[] = {17, 18, 3, 4, 8, 10};
+
+int main()
+{
+
+    int arr[] = {6, 1, 2, 3, 4, 5};
     int pivot = getPivot(arr, 6);
-    cout<<pivot;
- 
+    cout << pivot;
 }

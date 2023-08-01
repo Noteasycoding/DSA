@@ -41,8 +41,8 @@ int main()
 
     int arr[] = {1, 2, 2, 3, 5};
     int n = sizeof(arr) / sizeof(int);
-    int first = Position(arr, n, 5, true);
-    int last = Position(arr, n, 5, false);
+    int first = Position(arr, n, 6, true);
+    int last = Position(arr, n, 6, false);
 
     cout << first << endl;
     cout << last << endl;
